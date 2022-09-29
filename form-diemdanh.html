@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../diemdanh/home.css">
+    <title>Document</title>
+</head>
+<body onload="inliststudent()">
+    <div class="form-diemdanh">
+        <h3>Danh sách điểm danh</h3>
+        <label for="">Họ và tên</label>
+        <input type="text" id="fullname">
+        <span id="error-fullname" class="error"></span> <br>
+        <label for="">Địa chỉ email</label>
+        <input type="text" id="email">
+        <span id="error-email" class="error"></span> <br>
+        <label for="">MSSV</label>
+        <input type="text" id="mssv">
+        <span id="error-mssv" class="error"></span> <br>
+        <label for="">Trạng thái</label>
+        <input type="radio" name="tich" id="mat" value="1">Có mặt
+        <input type="radio" name="tich" id="muon" value="2">Đến muộn
+        <span id="error-trangthai" class="error"></span> <br>
+        <button onclick="save()"> Lưu</button>
+    </div>
+
+
+    <div class="list-diemdanh" id="list-diemdanh">
+        <h3>Danh sách điểm danh</h3>
+        <table id="diemdanh" style="width:600px" border="1">
+
+        </table>
+    </div>
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="../diemdanh/home.js"></script>
+    
+</body>
+</html>
